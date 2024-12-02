@@ -6,3 +6,59 @@ body {
 a {
   color: #00B7FF;
 }
+
+button {
+  margin-bottom: 10px;
+}
+
+/*Header*/
+.welcome-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome-message {
+  width: 85%;
+  align-content: center;
+
+}
+
+.signin-options {
+  width: 15%;
+  align-content: center;
+}
+
+button.login {
+  width: 100%;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-color: #000000;
+  color:#000000;
+}
+
+button.signup {
+  width: 100%;
+  background-color: #000000;
+  color:#ffffff;
+}
+
+/*Content*/
+
+select {
+  border-width: 0px;
+  border-bottom-width: 1px;
+}
+
+.minimap-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+}
+
+#map {
+  height: 600px;
+}
+
+/*About us*/

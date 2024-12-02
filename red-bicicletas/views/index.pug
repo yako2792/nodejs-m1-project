@@ -1,9 +1,41 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block header
+  .welcome-header
+    .welcome-message
+      h1 Welcome, #{user_name}!
+      p Here you can find a lot of different types of bicycles near to your house or any selected country.
+    
+    .signin-options
+      .login-button
+        button.login  Log in
+      .singup-button
+        button.signup Sign up
+  hr
 
-block content2
-  h1= test
-  p This is a #{test}
+block minimap
+  .country-selector
+    h2 Country selection
+    label(for="countries") Select a coutry: 
+    select#countries(name="countries")
+      option(value="mx") Mexico
+      option(value="us") United States
+      option(value="ca") Canada
+
+    br
+    label(for='bicicletas') Revisar todas las 
+    a#bicicletas(href='bicicletas/') bicicletas
+    
+    .minimap-container
+      #map
+  hr
+
+block about_us
+  .about-us
+    h2 About us
+    p Founded in September 1945.
+    h3 Contact
+    ul
+      li WhatsApp: 00 0000 0000
+      li Facebook: @example_user
+      li Mail: example@email.dir
