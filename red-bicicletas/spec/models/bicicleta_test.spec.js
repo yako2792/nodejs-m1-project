@@ -1,4 +1,4 @@
-var Bicicleta = require('../../../models/bicicleta');
+var Bicicleta = require('../../models/bicicleta');
 
 // Limpiar all bicis antes de cada test
 beforeEach(() => {
